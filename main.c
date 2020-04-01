@@ -28,29 +28,50 @@ void print_help(char *program_name) {
 
 // Ej 1: Funtion that finds the peak on the array, if it does not exist, return -1
 int array_peak_sequential(int a[], unsigned int length) {
-	int i, j, t;
+	int i, j, peak;
 	i = 0, j = length;
-	if (a[i] > a[i+1]) {
-		t = a[i];
-	else if (a[j] > a[j-1]) {
-		t = a[j];
-	else 
-		for (i = 1; i < j ; i++){
-			if (a[i-1] < a[i] && a[i] > a[i+1]) {
+
+      
+  if (a[0] > a[i+1]) {
+
+		    peak = a[0];
+
+    }
+
+	else if (a[length] > a[j-1]) {
+
+		    peak = a[j];
+
+    }
+
+	else for (i = 1; i < j ; i++){	
+            
+    if (a[i-1] < a[i] && a[i] > a[i+1]) {
 				
-				t = a[i];
-}
-}
-			
+			  peak = a[i];
+
+    }
+  } 
+	  return (peak);		
 } 
   //please change whatever you need here to make it work.
-  return (t);
-}
 
-// Ej 2: Funtion that finds the peak on the array, if it does not exist, return -1
+// Ej 2: Funtion that finds the peak on the array
+
 int array_peak_binary(int a[], unsigned int length) {
+
+    int i,peak,lft,mid,rgt;
+
+    i = 0, lft = i, rgt = length;
+
+    mid = (lft + rgt)/2
+
+    if ((mid = 0 ))
+
 	return 0;
 }
+
+
 
 char *parse_filepath(int argc, char *argv[]) {
     /* Parse the filepath given by command line argument. */
