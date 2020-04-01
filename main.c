@@ -34,13 +34,13 @@ int array_peak_sequential(int a[], unsigned int length) {
       
   if (a[0] > a[i+1]) {
 
-		    peak = a[0];
+		    peak = 0;
 
     }
 
 	else if (a[length] > a[j-1]) {
 
-		    peak = a[j];
+		    peak = j;
 
     }
 
@@ -48,7 +48,7 @@ int array_peak_sequential(int a[], unsigned int length) {
             
     if (a[i-1] < a[i] && a[i] > a[i+1]) {
 				
-			  peak = a[i];
+			  peak = i;
 
     }
   } 
@@ -58,19 +58,10 @@ int array_peak_sequential(int a[], unsigned int length) {
 
 // Ej 2: Funtion that finds the peak on the array
 
-int array_peak_binary(int a[], unsigned int length) {
+int array_peak_binary_rec (int a[], int peak, int lft, int rgt) {
 
-    int i,peak,lft,mid,rgt;
-
-    i = 0, lft = i, rgt = length;
-
-    mid = (lft + rgt)/2;
-
-    if ((mid = 0)){
-        peak = 1+mid;
-    }
-
-	return 0;
+  
+  return 0;
 }
 
 
