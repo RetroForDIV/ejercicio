@@ -66,7 +66,9 @@ int array_peak_binary(int a[], unsigned int length) {
 
     mid = (lft + rgt)/2
 
-    if ((mid = 0 ))
+    if ((mid = 0 )){
+      
+    }
 
 	return 0;
 }
